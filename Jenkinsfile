@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/your-app.git'
+                git 'https://github.com/CyndieKamau/nodejs-docs-hello-world.git'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
         stage('Package') {
             steps {
                 sh 'npm run build'
-                sh 'tar -czvf your-app.tar.gz your-app/'
+                sh 'tar -czvf nodejs-docs-hello-world.tar.gz hello-world/'
             }
         }
 
